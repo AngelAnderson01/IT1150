@@ -1,0 +1,70 @@
+body { 
+    font-size: 100%;
+    font-family: "Times New Roman", Times, serif;
+    background-color:rgb(102, 169, 173);
+    color: rgb(0, 0, 0);
+     }
+
+.text {
+    text-align: center;
+    
+}
+
+.center {
+    position: relative;
+    top:0px;
+    left: auto;
+    right: auto;
+    text-align:center;
+    
+    
+  }
+  .button {
+      
+      border:5px solid black;
+      width: 25%;
+      position: relative; 
+      left:0px;
+      padding:5px;
+      
+      
+  }
+      .face {
+        position: absolute;
+        top:190px;
+        left:400px;
+        z-index:1;
+         
+      }
+      .hair {
+        position: absolute;
+        top: 20px;
+        left: 340px;
+        z-index: 3;
+      }
+      .eyeBrow {
+        position: absolute;
+        top: 180px;
+        left: 460px;
+        z-index: 2;
+      }
+
+      .eyes {
+        position: absolute;
+        top: 185px;
+        left: 440px;
+        z-index: 2;
+      }
+      .nose {
+        position: absolute;
+        top: 189px;
+        left: 379px;
+        z-index: 3;
+      }
+      .mouth {
+        position: absolute;
+        top: 360px;
+        left: 600px;
+        z-index: 2;
+        width:35%;
+      }

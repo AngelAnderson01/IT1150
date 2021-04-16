@@ -171,7 +171,7 @@ body {
 .mySlides {
   display: none;
   max-width:100%;
-  background-size: contain;
+  background-size: contain cover;
 }
 
 .prev, .next {

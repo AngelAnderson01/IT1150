@@ -170,7 +170,7 @@ body {
 
 .mySlides {
   display: none;
-  max-width:auto;
+  max-width:100%;
 }
 
 .prev, .next {

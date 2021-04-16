@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <Title>History of Fenora </Title>
+        <link rel="stylesheet" href="stylesheets.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="history.html"class="active">History</a>
+        <a href="photos.html">Photos</a>
+      </nav>
+
+    <h1 class="header">History of Fenora</h1>
+
+    <div class="row">
+        <div class="tab">
+          <button class="tablinks col-3 col-s-3" onclick="openItem(event, 'taxes')" id="defaultOpen">Cost of Living</button>
+          <button class="tablinks col-3 col-s-3" onclick="openItem(event, 'weather')">Weather</button>
+          <button class="tablinks col-3 col-s-3" onclick="openItem(event, 'other')">Other</button>
+        </div>
+        
+        <div id="taxes" class="tabcontent col-6 col-s-9">
+          <h3>Taxes and Cost of Living</h3>
+          <p>     </p>
+        </div>
+        
+        <div id="weather" class="tabcontent">
+          <h3>Learn about our weather and more!</h3>
+          <p>       </p> 
+        </div>
+        
+        <div id="other" class="tabcontent">
+          <h3>Some more stuff to know about Fenora!</h3>
+          <p></p>
+        </div>
+      </div>
+        <script>
+        function openItem(evt, item) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(item).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+        </script>
+        
+    
+      
+</body>
+</html>

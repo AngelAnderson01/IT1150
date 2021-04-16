@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(128, 128, 128, 0.507);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  .textalign {
+    text-align:center;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #000000;
+  }
+  
+  .navbar a.active {
+    background-color: #0b91eb;
+    color: white;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+    .narbar a {float: left;}
+    nav.content {margin-left: 0;}
+  
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+.img {
+    width:100%;
+    height:auto;
+    background-size: contain;
+}
+.header {
+        width: auto;
+        height:100px;
+        text-align: center;
+        text-shadow:2px 2px 8px rgba(221, 221, 221, 0.466);
+        padding: 25px;
+        border: 5px solid rgb(8, 8, 39);
+        box-sizing: border-box;
+        background-color:rgb(18, 18, 31);
+        color: #0b91eb;;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  
+  
+}
+
+@media only screen and (min-width: 600px) {
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+.tab {
+  float: left;
+  border: 1px solid rgb(8, 6, 6);
+  background-color: #333;
+  width: 30%;
+  height: 195px;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #f2f2f2;
+  padding: 22px 16px;
+  border: none;
+  width:100%;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  text-align:center;
+}
+.tab button:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+.tab button.active {
+  background-color:  #0b91eb;
+  color: #f2f2f2;;
+}
+.tabcontent {
+  float: right;
+  padding: 0px 12px;
+  border: 5px solid rgb(3, 2, 2);
+  width: 70%;
+  height: 350px;
+  text-align:center;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

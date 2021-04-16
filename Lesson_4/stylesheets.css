@@ -68,6 +68,7 @@ body {
 .img {
     width:100%;
     height:auto;
+    background-size: contain;
 }
 .header {
         width: auto;

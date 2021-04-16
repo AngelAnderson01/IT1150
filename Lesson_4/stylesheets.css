@@ -69,7 +69,6 @@ body {
     max-width:100%;
     height:auto;
     background-size: contain;
-    margin:auto;
 }
 
 .header {
@@ -170,7 +169,7 @@ body {
 
 .mySlides {
   display: none;
-  max-width: auto;
+  max-width: 100%;
 }
 
 .prev, .next {

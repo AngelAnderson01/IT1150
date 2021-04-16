@@ -170,6 +170,7 @@ body {
 
 .mySlides {
   display: none;
+  width: auto;
 }
 
 .prev, .next {

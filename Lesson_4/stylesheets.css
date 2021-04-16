@@ -66,7 +66,7 @@ body {
   
   
 .img {
-    max-width:auto;
+    width:auto;
     height:auto;
     background-size: contain;
     margin:auto;

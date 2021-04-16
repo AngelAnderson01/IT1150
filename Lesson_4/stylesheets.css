@@ -157,7 +157,8 @@ body {
   width: 70%;
   height: fit-content;
   text-align:center;
-  
+  display: block;
+  overflow: auto;
 }
 
 .slideshow-container {
